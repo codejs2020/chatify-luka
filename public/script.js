@@ -5,7 +5,7 @@ const socket = io('/')
 const peer = new Peer(undefined, { //undefined je id klijenta koji ce peer server sam da generise
     path:'/peerjs',
     host: '/',
-    port: '443'
+    port: '3001'
 })
 
 const peers = {}
