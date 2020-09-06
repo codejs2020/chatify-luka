@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+}
+
+#video_grid {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+.main_left {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main_right {
+    flex: 0.2;
+}
+
+.main_videos {
+    flex-grow: 1;
+    background-color: rgb(29, 28, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    background-color: #202224;
+    color: ivory;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.controls_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    min-width: 80px;
+}
+
+.controls_button i {
+    font-size: 22px;
+}
+
+.leave_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    min-width: 80px;
+    color: red;
+}
+
+.leave_button i {
+    font-size: 22px;
+}
+
+.controls_button:hover {
+    background-color: #333536;
+    border-radius: 10px;
+}
+
+.leave_button:hover {
+    background-color: red;
+    border-radius: 10px;
+    color: ivory;
+}
+
+.controls_block {
+    display: flex;
+}
+
+.main_right {
+    background-color: #242324;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgb(47, 75, 64);
+}
+
+.main_header {
+    text-align: center;
+    color: #f5eaea;
+    font-size: large;
+    border-bottom: 1px solid #302e30;
+}
+
+.chat_window {
+    flex-grow: 1;
+    color: #f5eaea;
+    overflow-y: auto;
+}
+
+.chat_input_container {
+    padding: 22px 10px;
+    display: flex;
+    border-top: 1px solid #302e30;
+}
+
+.chat_input_container input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    color: #f5eaea;
+}
+
+.message {
+    border-bottom: 1px solid #302e30;
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
